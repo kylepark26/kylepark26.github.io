@@ -1319,7 +1319,151 @@ input, select, textarea {
 			.spotlights > section > .content {
 				padding: 3em 2em 1em 2em ;
 			}
+		}
 
+/* Header Wrapper */
+
+	.headerwrapper {
+		position: relative;
+	}
+
+		.headerwrapper > .inner {
+			padding: 5em 5em 3em 5em ;
+			max-width: 100%;
+			width: 75em;
+		}
+
+			@media screen and (max-width: 1680px) {
+
+				.headerwrapper > .inner {
+					padding: 0em 4em 2em 4em ;
+				}
+
+			}
+
+			@media screen and (max-width: 1280px) {
+
+				.headerwrapper > .inner {
+					width: 100%;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.headerwrapper > .inner {
+					padding: 0em 2em 1em 2em ;
+				}
+
+			}
+
+		/* Bottom part for About Me and Interests */
+		.headerwrapper.alt {
+			background-color: #000000; 
+		}
+
+		/* Background of Contact Me */
+		.headerwrapper.style1 {
+			background-color: #113f67;
+		}
+
+		/* Bottom part of the main page */
+		.headerwrapper.style1-alt {
+			background-color: #172766;
+		}
+
+		/* Color behind the AboutMe/Resume/Interests on main page */
+		.headerwrapper.style2 {
+			background-color: #a2a8d3;
+			/* background-color: #5052b5; */
+		}
+
+		/* Nothing ? */
+		.headerwrapper.style2-alt {
+			background-color: #3e4094;
+		}
+
+		/* Background of Projects on main page */
+		.headerwrapper.style3 {
+			background-color: #38598b;
+		}
+
+		/* Nothing */
+		.headerwrapper.style3-alt {
+			background-color: #953d75;
+		}
+
+		.headerwrapper.fullscreen {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+			body.is-ie .headerwrapper.fullscreen {
+				height: 100vh;
+			}
+
+			@media screen and (max-width: 1280px) {
+
+				.headerwrapper.fullscreen {
+					min-height: calc(100vh - 2.5em);
+				}
+
+					body.is-ie .headerwrapper.fullscreen {
+						height: calc(100vh - 2.5em);
+					}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.headerwrapper.fullscreen {
+					padding: 2em 0;
+					min-height: 0;
+				}
+
+					body.is-ie .headerwrapper.fullscreen {
+						height: auto;
+					}
+
+			}
+
+		.headerwrapper.fade-up > .inner {
+			transform: translateY(0);
+			transition: opacity 1s ease, transform 1s ease;
+			opacity: 1.0;
+		}
+
+		.headerwrapper.fade-up.inactive > .inner,
+		body.is-preload .headerwrapper.fade-up > .inner {
+			opacity: 0;
+			transform: translateY(1em);
+		}
+
+		.headerwrapper.fade-down > .inner {
+			transform: translateY(0);
+			transition: opacity 1s ease, transform 1s ease;
+			opacity: 1.0;
+		}
+
+		.headerwrapper.fade-down.inactive > .inner,
+		body.is-preload .headerwrapper.fade-down > .inner {
+			opacity: 0;
+			transform: translateY(-1em);
+		}
+
+		.headerwrapper.fade > .inner {
+			transition: opacity 1s ease;
+			opacity: 1.0;
+		}
+
+		.headerwrapper.fade.inactive > .inner,
+		body.is-preload .headerwrapper.fade > .inner {
+			opacity: 0;
 		}
 
 /* Wrapper */
@@ -1479,8 +1623,6 @@ input, select, textarea {
 		/* background-color: #a2a8d3; Color on header of About me and interests page */
 		cursor: default;
 		padding: 1.75em 2em;
-		border-bottom: 5px solid #ffffff;
-
 	}
 
 		#header > .title {
