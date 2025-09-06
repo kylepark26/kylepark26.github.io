@@ -728,6 +728,15 @@ input, select, textarea {
 }
 
 #interests-image2 {
+    float: left;
+    width: 500px;
+    height: 600px;
+    margin-right: 1.5em; /* Space between the image and the text */
+    margin-bottom: 1.5em; /* Increased space below the image */
+    clear: both; /* Ensure no content overlaps */
+}
+
+#interests-image3 {
     float: right;
     width: 550px;
     height: 400px;
@@ -736,7 +745,7 @@ input, select, textarea {
     clear: both; /* Ensure no content overlaps */
 }
 
-#interests-image3 {
+#interests-image4 {
     float: left;
     width: 575px;
     height: 400px;
