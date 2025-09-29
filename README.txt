@@ -1,33 +1,31 @@
-Hyperspace by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Kyle Park's Website
 
+A personal portfolio website showcasing my projects, interests, and contact information.
 
-So I've had the wireframe for this particular design kicking around for some time, but with all
-the other interesting (and in some cases, semi-secret) projects I've been working on it took me
-a little while to get to actually designing and coding it. Fortunately, things have eased up
-enough for me to finaly get around to it, so I'm happy to introduce Hyperspace: a fun, blocky,
-one-page design with a lot of color, a bit of animation, and an additional "generic" page template
-(because hey, even one-page sites usually need an interior page or two). Hope you dig it :)
+## Features
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+- Responsive design
+- Project showcase
+- About Me and Interests pages
+- Contact form and social links
 
-(* = not included)
+## Installation
 
-AJ
-aj@lkn.io | @ajlkn
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/yourusername/yourrepo.git
+   ```
+2. Open `index.html` in your browser.
 
+## Folder Structure
 
-Credits:
+- `assets/` – CSS, JS, fonts, images
+- `aboutme.html`, `interests.html`, `index.html` – Main pages
+- `files/` – Resume PDFs and images
 
-	Demo Images:
-		Unsplash (unsplash.com)
+## Technologies Used
 
-	Icons:
-		Font Awesome (fontawesome.io)
+- HTML5, CSS3, Sass
+- JavaScript, jQuery
+- Font Awesome
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
